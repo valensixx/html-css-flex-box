@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*nav-bar*/
+        .navbar{
+            width:85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            
+        }
+
+        #logo{
+            cursor: pointer;
+            width:100px;
+        }
+
+        .nav-text{
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+       .btn{
+            background-color: silver;
+            cursor: pointer;
+            border: 1px solid black;
+            padding-left: 25px;
+            padding-right: 25px;
+            
+        }
+        /*nav-bar end*/
+        /*Intro*/
+
+        img{
+            width: 100%;
+            position: relative;
+        }
+
+        .intro{
+            background-image: url('/bootstrap/bg-section-1.jpg');
+            display: flex;
+            flex-direction: column;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+        .intro-table{
+            width:30%;
+            padding-left:22%;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .btn-intro{
+            padding: 15px;
+            cursor: pointer;
+            color: white;
+            margin-top: 15px;
+            background-color: grey;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .intro-table h1{
+            padding-bottom: 15px;
+        }
+        /*intro end*/
+        /*three box*/
+        .theeBox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2rem;
+        }
+
+        .box2{
+            margin: 0px 30px;
+        }
+        
+        /*three box end*/
+        /*last 1*/
+        .last-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;  
+            align-items: center;  
+            margin-top: 1rem;
+            margin-bottom: 1rem;    
+        }
+        .last-1-img{
+            width:30%;
+            height:30%;
+            margin-right:2rem;
+        }
+        .last-1-info{
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+        /*last 1 end*/
+        /*last 2*/
+        .last-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;  
+            align-items: center;      
+        }
+        .last-2-info{
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+        .last-2-img{
+            width:30%;
+            height:30%;
+            margin-left:2rem;
+        }
+        /*last 2 end*/
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    <div class="menu">
+        <div class="navbar">
+            <ul class="nav-text">
+                <li><img src="/homework/hw1wd2/logo.png" id="logo" alt="logo"></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a class="btn" href="">Log in</a></li>
+                <li><a class="btn" href="">Sign up</a></li>
+            </ul>
+        </div>
+    </div> 
+    <!--NavBar End-->
+    <!--intro-->
+    <div class="intro">
+        <div class="intro-table">
+            <div><h1>Product</h1></div>
+            <div><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam porro, nisi vero laudantium possimus corporis 
+                reprehenderit deserunt hic quae vel.
+            </p></div>
+            <div><button class="btn-intro">Learn more</button></div>
+        </div>
+    </div>  
+    <!--intro end-->
+    <!--Theree Boxes-->
+    <div class="theeBox">
+        <div class="box box1">
+            <div><img class="box-img" src="/bootstrap/team-1.jpg" alt=""></div>
+            <h2>Second title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box box2">
+            <div><img class="box-img" src="/bootstrap/team-2.jpg" alt=""></div>
+            <h2>Second title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box box3">
+            <div><img class="box-img" src="/bootstrap/team-3.jpg" alt=""></div>
+            <h2>Second title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <!--Theree Boxes end-->
+    <!--last 1-->
+    <div class="last-1">
+        <div class="last-1-img">
+            <img src="/bootstrap/portfolio.jpg" alt="">
+        </div>
+        <div class="last-1-info">
+            <h2>This is title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <!--last 1 end-->
+    <!--last 2-->
+    <div class="last-2">
+        <div class="last-2-info">
+            <h2>This is title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="last-2-img">
+            <img src="/bootstrap/portfolio.jpg" alt="">
+        </div>
+    </div>
+    <!--last 2 end-->
+</body>
+</html>
